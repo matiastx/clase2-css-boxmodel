@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 2 de CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>CLASE 2 de CSS (Box Modeling)</h1>
+
+    <div class="overflow seccion">
+      <ul>
+        <li>👉 <span>visible:</span> Por defecto, el excedente se ve</li>
+        <li>👉 <span>hidden:</span> El excedente se oculta</li>
+        <li>👉 <span>scroll:</span> Crea una barra de scroll (X/Y)</li>
+        <li>👉 <span>auto:</span> Crea Scroll donde sea necesario</li>
+      </ul>
+      <div class="basicbox flex">
+        <p>visible</p>
+        <div class="box">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, amet.
+        </div>
+        <p>hidden</p>
+        <div class="box hidden">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, amet.
+        </div>
+        <p>scrool</p>
+        <div class="box scrool">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti amet
+          perspiciatis doloribus earum eum fuga nulla omnis esse commodi
+          voluptatum!
+        </div>
+        <p>auto</p>
+        <div class="box auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti amet
+          perspiciatis doloribus earum eum fuga nulla omnis esse commodi
+          voluptatum!
+        </div>
+      </div>
+    </div>
+
+    <div class="padding seccion">
+      <h2>Padding</h2>
+      <ul>
+        <li>
+          <div class="basicbox pad10px">
+            <p>Paddign 10px</p>
+          </div>
+        </li>
+        <li>
+          <div class="basicbox padvar">
+            <p>Paddign 10px 5px 20px 15px</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bodes seccion">
+      <h2>Border</h2>
+      <div class="basicbox flex">
+        <ul>
+          <li class="b-sol">
+            <p>Solid</p>
+          </li>
+          <li class="b-dash">
+            <p>Dashed</p>
+          </li>
+          <li class="b-dot">
+            <p>Dotted</p>
+          </li>
+          <li class="b-dou">
+            <p>Double</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="margen seccion">
+      <h2>Margen</h2>
+      <p>1: margen: 10px 5px 20px 10px</p>
+      <p>2: margen: 0px</p>
+      <div class="basicbox flex mg">
+        <div class="box-c mg-var">1</div>
+        <div class="box-c mg-0">2</div>
+      </div>
+    </div>
+
+    <div class="posision seccion">
+      <h2>Position</h2>
+      <div>
+        <h2>Valores posibles</h2>
+        <div>
+          <ul>
+            <li>
+              <p>👉<span>static</span> Valor por defecto</p>
+            </li>
+            <li>
+              <p>
+                👉<span>relative</span> Se posiciona relativamente al Flujo
+                Normal
+              </p>
+              <div class="basicbox flex pos">
+                <div class="box-c">1</div>
+                <div class="box-c relative">2</div>
+                <div class="box-c">3</div>
+              </div>
+            </li>
+            <li>
+              <p>
+                👉<span>absolute</span> Se posiciona respecto a su contenedor
+                mas cercano, si no encuentra ninguno se posiciona respecto el
+                viewport
+              </p>
+              <div class="basicbox flex pos">
+                <div class="box-c">1</div>
+                <div class="box-c absolute">2</div>
+                <div class="box-c">3</div>
+              </div>
+            </li>
+            <li>
+              <p>
+                👉<span>fixed</span> Se posiciona respecto al viewport y queda
+                fijo
+              </p>
+              <div class="basicbox flex pos">
+                <div class="box-c">1</div>
+                <div class="box-c fixed">2</div>
+              </div>
+            </li>
+            <li>
+              <p>👉<span>sticky</span> Hibrido entre relative y fixed</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
